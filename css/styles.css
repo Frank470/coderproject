@@ -1,0 +1,145 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: large;
+}
+.navbar a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #b403e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navbar a:active {
+  text-decoration: underline;
+}
+
+.card img {
+  width: 300px;
+  height: 200px;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 0;
+}
+
+.custom-video {
+  height: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.texto-debajo,
+.texto-nosotros {
+  text-align: center;
+  padding: 10px;
+}
+
+.imagen-nosotros img {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#contact-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    margin-left: 10px;
+  }
+  .navbar-toggler {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .logo,
+  .card img,
+  .custom-video,
+  .imagen-nosotros img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .navbar a {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .navbar-toggler {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .logo {
+    max-width: 80%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav .nav-item a {
+    display: block;
+    padding: 10px;
+  }
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
